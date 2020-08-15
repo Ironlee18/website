@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Spartan', sans-serif;
+	color: #222;
+}
+
+#hero-overlay h4{
+	font-family: 'Monoton', cursive;
+}
+
+.color-white{
+	color: #fff;
+}
+
+h1{font-size: 60px;}
+h2{font-size: 50px;}
+h3{font-size: 40px;}
+h4{font-size: 30px;}
+
+header{
+	display: flex;
+	flex-flow: row wrap;
+	background: #fff;
+	padding: 20px 5vw;
+	align-items: center;
+}
+
+header .logo-container{
+	flex-basis: 20%;
+}
+header .logo-container .page-logo{
+	height: 60px;
+	width: auto;
+}
+
+
+
+header .mobile-menu-toggler{
+	display: none;
+}
+
+header .header-nav{
+	flex-basis: 80%;
+	text-align: right;
+}
+
+header .header-nav ul li{
+	display: inline-block;
+	padding: 0 10px;
+}
+
+header .header-nav ul li a{
+	text-decoration: none;
+	transition: 250ms;
+}
+
+header .header-nav ul li a:hover{
+	color: #f37871;
+}
+
+#home-hero{
+	max-height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#home-hero #hero-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, rgba(119,119,0,0.5) 0%, rgba(255,255,0,0.7) 100% );
+	/*
+	Background streches to both ends
+	padding-top: 128px;
+	background-image:url(assets/images/image1.png);
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+	*/
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#home-hero #hero-overlay h4{
+	margin-bottom: 20px;
+}
+
+#HeadImg{
+	background-color: black;
+	padding-left: 20%;
+}
+
+/*Tickets*/
+
+#TixBtn{
+	padding: 16px;
+}
+
+#TickInfo{
+	font-size: 24px;
+}
+
+#StandTic{
+	font-size: 28px;
+	background-color: green;
+	padding:10px 5px
+}
+
+#VIPTic{
+	font-size: 28px;
+	background-color: #0af;
+	padding: 10px 20px;
+}
+
+#statement-section{
+	padding: 50px 5vw;
+	text-align: center;
+	background-image: url('assets/images/statement-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#statement-section h2{
+	margin-bottom: 50px;
+}
+
+#statement-section p{
+	margin-bottom: 30px;
+}
+
+/*Subscribtion*/
+
+.default-container-spacing {
+	padding: 50px 5%;
+	border: 12px;
+	border-color: black;
+}
+
+#footer-container {
+    background-color: #666600;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-form .form-row {
+    margin-bottom: 30px;
+}
+
+#contact-form input, #contact-form textarea, #contact-form select {
+    width: 40%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    color: rgb(255,255,255);
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+#contact-form input:hover, #contact-form select:hover {
+    border-bottom: 2px solid rgba(255,255,255,1);
+}
+
+#contact-form input:focus, #contact-form select:focus {
+    border-bottom: 2px solid #FF546C;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder {
+    color: rgb(255,255,255);
+}
+
+#contact-form button[type="submit"]{
+    display:inline-block;
+    background-color: transparent;
+    color: #fff;
+    border:2px solid #ff546c;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto 0;
+    padding: 0 5px;
+    font-family: "Poppins", sans-serif;
+    transition: 250ms;
+    cursor: "pointer";
+}
+
+#contact-form button[type="submit"]:hover{
+    background-color: #ff546c;
+}
+
+
+#portfolio-section{
+	padding: 50px 5vw;
+	background-color: black;
+}
+
+#portfolio-section > h2{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+#portfolio-section .grid{
+	margin: 0 auto;
+	flex-flow: wrap;
+}
+
+#portfolio-section .grid-item{
+	width: 100%;
+	flex-flow: wrap;
+	margin-bottom: 10px;
+}
+
+#portfolio-section .grid-item img{
+	width: 10%;
+	display: block;
+}
+
+#portfolio-section .grid-item::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#portfolio-section .grid-item:nth-child(1):hover::before{content: 'VADIM BLYAT';}
+#portfolio-section .grid-item:nth-child(2):hover::before{content: '2';}
+#portfolio-section .grid-item:nth-child(3):hover::before{content: '3';}
+#portfolio-section .grid-item:nth-child(4):hover::before{content: '4';}
+#portfolio-section .grid-item:nth-child(5):hover::before{content: '5';}
+#portfolio-section .grid-item:nth-child(6):hover::before{content: '6';}
+#portfolio-section .grid-item:nth-child(7):hover::before{content: '7';}
+#portfolio-section .grid-item:nth-child(8):hover::before{content: '8';}
+#portfolio-section .grid-item:nth-child(9):hover::before{content: '9';}
+#portfolio-section .grid-item:nth-child(10):hover::before{content: '10';}
+#portfolio-section .grid-item:nth-child(12):hover::before{content: '12';}
+#portfolio-section .grid-item:nth-child(13):hover::before{content: '13';}
+#portfolio-section .grid-item:nth-child(14):hover::before{content: '14';}
+#portfolio-section .grid-item:nth-child(15):hover::before{content: '15';}
+#portfolio-section .grid-item:nth-child(16):hover::before{content: '16';}
+#portfolio-section .grid-item:nth-child(17):hover::before{content: '17';}
+#portfolio-section .grid-item:nth-child(18):hover::before{content: '18';}
+#portfolio-section .grid-item:nth-child(19):hover::before{content: '19';}
+#portfolio-section .grid-item:nth-child(20):hover::before{content: '20';}
+#portfolio-section .grid-item:nth-child(21):hover::before{content: '21';}
+#portfolio-section .grid-item:nth-child(22):hover::before{content: '22';}
+#portfolio-section .grid-item:nth-child(23):hover::before{content: '23';}
+#portfolio-section .grid-item:nth-child(24):hover::before{content: '24';}
+#portfolio-section .grid-item:nth-child(25):hover::before{content: '25';}
+
+@media only screen and (max-width: 991px){
+
+	header{
+		justify-content: space-between;
+	}
+
+	header .mobile-menu-toggler{
+		display: block;
+		outline: none;
+	}
+
+	header .header-nav{
+		position: fixed;
+		right: -100%;
+		top: 105px;
+		height: calc(100%-105px);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		transition: 500ms;
+		z-index: 100;
+	}
+
+	header .header-nav.visible{
+		right: 0;
+	}
+
+	header .header-nav ul li{
+		display: block;
+		text-align: center;
+		padding: 25px 10px;
+	}
+
+	#HeadImg{
+		padding-left: 0;
+	}
+}
+
+/*masonry*/
