@@ -211,20 +211,16 @@ header .header-nav ul li a:hover{
 #portfolio-section .grid{
 	margin: 0 auto;
 	flex-flow: wrap;
+	position: inherit;
 }
 
 #portfolio-section .grid-item{
-	width: 100%;
-	flex-flow: wrap;
-	margin-bottom: 10px;
+	width: 30%;
 }
 
-#portfolio-section .grid-item img{
-	width: 10%;
-	display: block;
-}
+#portfolio-section .grid-item img{width: 100%;}
 
-#portfolio-section .grid-item::before{
+/*#portfolio-section .grid-item::before{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -236,32 +232,7 @@ header .header-nav ul li a:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-#portfolio-section .grid-item:nth-child(1):hover::before{content: 'VADIM BLYAT';}
-#portfolio-section .grid-item:nth-child(2):hover::before{content: '2';}
-#portfolio-section .grid-item:nth-child(3):hover::before{content: '3';}
-#portfolio-section .grid-item:nth-child(4):hover::before{content: '4';}
-#portfolio-section .grid-item:nth-child(5):hover::before{content: '5';}
-#portfolio-section .grid-item:nth-child(6):hover::before{content: '6';}
-#portfolio-section .grid-item:nth-child(7):hover::before{content: '7';}
-#portfolio-section .grid-item:nth-child(8):hover::before{content: '8';}
-#portfolio-section .grid-item:nth-child(9):hover::before{content: '9';}
-#portfolio-section .grid-item:nth-child(10):hover::before{content: '10';}
-#portfolio-section .grid-item:nth-child(12):hover::before{content: '12';}
-#portfolio-section .grid-item:nth-child(13):hover::before{content: '13';}
-#portfolio-section .grid-item:nth-child(14):hover::before{content: '14';}
-#portfolio-section .grid-item:nth-child(15):hover::before{content: '15';}
-#portfolio-section .grid-item:nth-child(16):hover::before{content: '16';}
-#portfolio-section .grid-item:nth-child(17):hover::before{content: '17';}
-#portfolio-section .grid-item:nth-child(18):hover::before{content: '18';}
-#portfolio-section .grid-item:nth-child(19):hover::before{content: '19';}
-#portfolio-section .grid-item:nth-child(20):hover::before{content: '20';}
-#portfolio-section .grid-item:nth-child(21):hover::before{content: '21';}
-#portfolio-section .grid-item:nth-child(22):hover::before{content: '22';}
-#portfolio-section .grid-item:nth-child(23):hover::before{content: '23';}
-#portfolio-section .grid-item:nth-child(24):hover::before{content: '24';}
-#portfolio-section .grid-item:nth-child(25):hover::before{content: '25';}
+}*/
 
 @media only screen and (max-width: 991px){
 
@@ -303,4 +274,3 @@ header .header-nav ul li a:hover{
 	}
 }
 
-/*masonry*/
