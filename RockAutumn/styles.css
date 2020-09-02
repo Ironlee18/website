@@ -49,7 +49,7 @@ header .logo-container .page-logo{
 	width: auto;
 }
 
-header .mobile-menu-toggler{
+header .MobileMenu{
 	display: none;
 }
 
@@ -208,7 +208,7 @@ button{
     background-color: #ff546c;
 }
 
-
+/*Photo Gallery*/
 #portfolio-section{
 	padding: 50px 5vw;
 	background-color: black;
@@ -235,7 +235,6 @@ button{
 	header{
 		justify-content: space-between;
 	}
-/*
 	header .mobile-menu-toggler{
 		display: block;
 		outline: none;
@@ -263,7 +262,8 @@ button{
 		display: block;
 		text-align: center;
 		padding: 25px 10px;
-	}*/ 
+	}
+
 
 	#HeadImg{
 		padding-left: 0;
