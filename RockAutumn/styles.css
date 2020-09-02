@@ -5,8 +5,8 @@
 	color: #222;
 }
 
-#hero-overlay h4{
-	font-family: 'Monoton', cursive;
+#hero-overlay h1{
+	font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .color-white{
@@ -18,12 +18,27 @@ h2{font-size: 50px;}
 h3{font-size: 40px;}
 h4{font-size: 30px;}
 
-header{
+
+
+/*Navbar*/
+/* The navigation bar */
+.header {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+  }
+
+  header{
 	display: flex;
 	flex-flow: row wrap;
 	background: #fff;
 	padding: 20px 5vw;
 	align-items: center;
+	position: fixed;
+	visibility: visible;
+	width:90%;
 }
 
 header .logo-container{
@@ -33,8 +48,6 @@ header .logo-container .page-logo{
 	height: 60px;
 	width: auto;
 }
-
-
 
 header .mobile-menu-toggler{
 	display: none;
@@ -59,6 +72,7 @@ header .header-nav ul li a:hover{
 	color: #f37871;
 }
 
+/*Hero Section*/
 #home-hero{
 	max-height: 500px;
 	overflow: hidden;
@@ -72,14 +86,6 @@ header .header-nav ul li a:hover{
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(90deg, rgba(119,119,0,0.5) 0%, rgba(255,255,0,0.7) 100% );
-	/*
-	Background streches to both ends
-	padding-top: 128px;
-	background-image:url(assets/images/image1.png);
-	background-size: cover;
-	background-repeat: none;
-	background-position: center;
-	*/
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -99,6 +105,7 @@ header .header-nav ul li a:hover{
 
 #TixBtn{
 	padding: 16px;
+	text-align: center;
 }
 
 #TickInfo{
@@ -108,23 +115,23 @@ header .header-nav ul li a:hover{
 #StandTic{
 	font-size: 28px;
 	background-color: green;
-	padding:10px 5px
+	padding-top: 20px;
+	padding-bottom:20px;
 }
 
 #VIPTic{
 	font-size: 28px;
 	background-color: #0af;
-	padding: 10px 20px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
 }
-
-#statement-section{
-	padding: 50px 5vw;
-	text-align: center;
-	background-image: url('assets/images/statement-bg.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+#BTNTIX{
+	flex-flow: wrap;
+	padding-right: 75%;
+	height: 20px
 }
 
 #statement-section h2{
@@ -133,6 +140,11 @@ header .header-nav ul li a:hover{
 
 #statement-section p{
 	margin-bottom: 30px;
+}
+
+button{
+	border: 0;
+	border-radius: 4%;
 }
 
 /*Subscribtion*/
@@ -214,32 +226,16 @@ header .header-nav ul li a:hover{
 	position: inherit;
 }
 
-#portfolio-section .grid-item{
-	width: 30%;
-}
+#portfolio-section .grid-item{width: 30%;}
 
 #portfolio-section .grid-item img{width: 100%;}
-
-/*#portfolio-section .grid-item::before{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-	color: #fff;
-	font-size: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}*/
 
 @media only screen and (max-width: 991px){
 
 	header{
 		justify-content: space-between;
 	}
-
+/*
 	header .mobile-menu-toggler{
 		display: block;
 		outline: none;
@@ -267,7 +263,7 @@ header .header-nav ul li a:hover{
 		display: block;
 		text-align: center;
 		padding: 25px 10px;
-	}
+	}*/ 
 
 	#HeadImg{
 		padding-left: 0;
